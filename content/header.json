@@ -18,7 +18,10 @@
     "socials": true
   },
   "categories_list": {
-    "featured": [],
+    "featured": [
+      "/masculino?Masculino",
+      "/feminino?Feminino"
+    ],
     "random": 6,
     "full_width": true
   },
