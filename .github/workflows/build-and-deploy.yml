@@ -41,7 +41,7 @@ jobs:
           node-version: '12.x'
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -68,7 +68,7 @@ jobs:
         run: npm ci --only=production
 
       - name: Check last changed files
-        uses: lots0logs/gh-action-get-changed-files@2.1.4
+        uses: lots0logs/gh-action-get-changed-files@2.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
         id: changed_files
